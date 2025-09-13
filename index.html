@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Balanace Law Firm - Professional Legal Services</title>
+
+    <style>
+
+        /* Reset and base styles */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: 'Arial', sans-serif;
+
+            line-height: 1.6;
+
+            color: #333;
+
+            background-color: #f4f4f4;
+
+        }
+
+        .container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 20px;
+
+        }
+
+
+
+        /* Header */
+
+        header {
+
+            background-color: #fff;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+            position: fixed;
+
+            width: 100%;
+
+            top: 0;
+
+            z-index: 1000;
+
+        }
+
+        nav {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 1rem 0;
+
+        }
+
+        .logo {
+
+            font-size: 1.5rem;
+
+            font-weight: bold;
+
+            color: #004080; /* Navy blue for professional look */
+
+        }
+
+        .nav-links {
+
+            display: flex;
+
+            list-style: none;
+
+        }
+
+        .nav-links li {
+
+            margin-left: 2rem;
+
+        }
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: #333;
+
+            font-weight: bold;
+
+            transition: color 0.3s;
+
+        }
+
+        .nav-links a:hover {
+
+            color: #004080;
+
+        }
+
+
+
+        /* Hero Section */
+
+        .hero {
+
+            background-color: #004080;
+
+            color: #fff;
+
+            text-align: center;
+
+            padding: 150px 0 100px;
+
+            margin-top: 70px; /* Account for fixed header */
+
+        }
+
+        .hero h1 {
+
+            font-size: 3rem;
+
+            margin-bottom: 1rem;
+
+        }
+
+        .hero p {
+
+            font-size: 1.2rem;
+
+            margin-bottom: 2rem;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            background-color: #fff;
+
+            color: #004080;
+
+            padding: 10px 20px;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            font-weight: bold;
+
+            transition: background-color 0.3s;
+
+        }
+
+        .btn:hover {
+
+            background-color: #f0f0f0;
+
+        }
+
+
+
+        /* Main Content */
+
+        main {
+
+            padding: 50px 0;
+
+        }
+
+        section {
+
+            margin-bottom: 50px;
+
+        }
+
+        h2 {
+
+            color: #004080;
+
+            text-align: center;
+
+            margin-bottom: 2rem;
+
+            font-size: 2.5rem;
+
+        }
+
+        .about-content, .services-grid, .contact-content {
+
+            background-color: #fff;
+
+            padding: 30px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+        }
+
+        .services-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 20px;
+
+        }
+
+        .service-item {
+
+            padding: 20px;
+
+            border-left: 4px solid #004080;
+
+        }
+
+        .service-item h3 {
+
+            color: #004080;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        /* Contact Form */
+
+        form {
+
+            display: flex;
+
+            flex-direction: column;
+
+            max-width: 500px;
+
+            margin: 0 auto;
+
+        }
+
+        input, textarea {
+
+            margin-bottom: 1rem;
+
+            padding: 10px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 4px;
+
+        }
+
+        button {
+
+            background-color: #004080;
+
+            color: #fff;
+
+            padding: 10px;
+
+            border: none;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+
+            background-color: #003366;
+
+        }
+
+
+
+        /* Footer */
+
+        footer {
+
+            background-color: #333;
+
+            color: #fff;
+
+            text-align: center;
+
+            padding: 20px 0;
+
+        }
+
+
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            .nav-links {
+
+                flex-direction: column;
+
+            }
+
+            .nav-links li {
+
+                margin: 0.5rem 0;
+
+            }
+
+            .hero h1 {
+
+                font-size: 2rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="container">
+
+            <div class="logo">Higher Law Firm</div>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <section id="home" class="hero">
+
+        <div class="container">
+
+            <h1>Welcome to Higher Law Firm</h1>
+
+            <p>Your trusted partner in legal matters. Experienced attorneys providing expert advice and representation.</p>
+
+            <a href="#contact" class="btn">Get a Consultation</a>
+
+        </div>
+
+    </section>
+
+
+
+    <main class="container">
+
+        <section id="about" class="about-content">
+
+            <h2>About Us</h2>
+
+            <p>At Higher Law Firm, we are dedicated to providing high-quality legal services to our clients. With years of experience in various fields of law, our team of skilled attorneys is committed to achieving the best possible outcomes for you. We believe in transparency, integrity, and excellence in everything we do.</p>
+
+        </section>
+
+
+
+        <section id="services" class="services-grid">
+
+            <h2>Our Services</h2>
+
+            <div class="service-item">
+
+                <h3>Personal Injury</h3>
+
+                <p>Representing clients in immigration cases to ensure they receive fair treatment.</p>
+
+            </div>
+
+            <div class="service-item">
+
+                <h3>Family Law</h3>
+
+                <p>Handling divorce, child custody, and other family-related legal matters with compassion.</p>
+
+            </div>
+
+            <div class="service-item">
+
+                <h3>Real Estate</h3>
+
+                <p>Providing prompt advice on real estate transations.</p>
+
+            </div>
+
+            <div class="service-item">
+
+                <h3>Business Law</h3>
+
+                <p>Advising businesses on contracts, mergers, and compliance issues.</p>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="contact" class="contact-content">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <p style="text-align: center; margin-top: 20px;">Phone: (123) 456-7890 | Email: info@balanacelawfirm.com</p>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>&copy; 2025 Higher Law Firm. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
